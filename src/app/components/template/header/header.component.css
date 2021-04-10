@@ -1,0 +1,25 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  img {
+    height: 2rem;
+  }
+
+  .header {
+    height: 10%;
+  }
+  span {
+    display: flex;
+    align-items: center;
+  }
+
+  h1 {
+    padding-left: 1.8rem;
+    font-size: 1.7rem;
+  }
+  .versao {
+    position: absolute;
+    font-size: 9px;
+    right: 45px;
+    opacity: 0.4;
+  }
