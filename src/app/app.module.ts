@@ -14,6 +14,13 @@ import {MatSidenavModule} from '@angular/material/sidenav'; //Sidenav
 import {MatListModule} from '@angular/material/list';
 import { HomeComponent } from './components/views/home/home.component'; //list que irá aparecer no sidenav
 import {MatCardModule} from '@angular/material/card';
+import { PacienteCreateComponent } from './components/views/paciente/paciente-create/paciente-create.component';
+import { ReceituarioCreateComponent } from './components/views/receituario/receituario-create/receituario-create.component';
+import { FormsModule } from '@angular/forms'
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { PacienteReadComponent } from './components/views/paciente/paciente-read/paciente-read.component';
+import {MatTableModule} from '@angular/material/table';
 
 
 
@@ -26,7 +33,10 @@ import {MatCardModule} from '@angular/material/card';
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    PacienteCreateComponent,
+    ReceituarioCreateComponent,
+    PacienteReadComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +47,11 @@ import {MatCardModule} from '@angular/material/card';
     BrowserAnimationsModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    FormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatTableModule
     
     
   ],

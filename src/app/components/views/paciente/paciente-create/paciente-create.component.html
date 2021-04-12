@@ -1,0 +1,65 @@
+<mat-card>
+<form>
+    <h1>Cadastro de Paciente</h1>
+    <table class="form" cellspacing="0">
+        <tr>
+            <td>
+                <mat-form-field class="form">
+                    <mat-label>Nome</mat-label>
+                    <input  matInput placeholder="Digite um Nome" type="text">
+                </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field class="form">
+                    <mat-label>Sobre nome</mat-label>
+                    <input matInput placeholder="Digite um Sobrenome" type="text">
+                </mat-form-field>
+            </td>
+            
+            <td>
+                <mat-form-field class="form">
+                    <mat-label>CPF</mat-label>
+                    <input matInput placeholder="Digite um CPF" type="text">
+                </mat-form-field>
+            </td>
+        </tr>
+    </table>
+
+    <table class="form" cellspacing="0">
+        <tr>
+            <td>
+                <mat-form-field class="form">
+                    <mat-label>Cidade</mat-label>
+                    <input matInput placeholder="Digite uma Cidade">
+                </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field class="form">
+                    <mat-label>Estado</mat-label>
+                    <input matInput placeholder="Digite um Estado">
+                </mat-form-field>
+            </td>
+            
+            <td>
+                <mat-form-field class="form">
+                    <mat-label>Bairro</mat-label>
+                    <input matInput placeholder="Digite um Bairro">
+                </mat-form-field>
+            </td>
+          
+            <td>
+                <mat-form-field class="form">
+                    <mat-label>Postal Code</mat-label>
+                    <input matInput #postalCode maxlength="8" placeholder="Digite um CEP">
+                    <mat-hint align="end">{{postalCode.value.length}} / 8</mat-hint>
+                </mat-form-field>
+            </td>
+        </tr>
+    </table>
+    <div class="buttons">
+        <button class="mat-elevation-z8" mat-raised-button color="primary" >SALVAR</button>
+        <button class="mat-elevation-z8" mat-raised-button color="warn" >CANCELAR</button>
+
+    </div>
+</form>
+</mat-card>
